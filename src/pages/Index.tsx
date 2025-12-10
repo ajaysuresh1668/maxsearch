@@ -28,9 +28,10 @@ const Index = () => {
   };
 
   const handleFeelingLucky = () => {
-    toast("🍀 Feeling lucky!", {
-      description: "Redirecting to a random awesome site...",
+    toast("✨ Feeling lucky!", {
+      description: "Taking you somewhere amazing...",
     });
+    navigate(`/search?q=${encodeURIComponent("who is the founder of maxsearch")}`);
   };
 
   return (

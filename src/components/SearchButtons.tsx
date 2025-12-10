@@ -13,7 +13,7 @@ const SearchButtons = ({ onSearch, onFeelingLucky }: SearchButtonsProps) => {
         onClick={onSearch}
         className="px-6 py-2.5 text-sm font-medium hover:ring-1 hover:ring-border transition-all"
       >
-        Goggli Search
+        Maxsearch
       </Button>
       <Button
         variant="secondary"
