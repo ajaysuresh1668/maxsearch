@@ -1,13 +1,16 @@
 const SearchLogo = () => {
   return (
-    <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight select-none mb-8">
-      <span className="text-logo-blue">G</span>
-      <span className="text-logo-red">o</span>
-      <span className="text-logo-yellow">g</span>
-      <span className="text-logo-blue">g</span>
-      <span className="text-logo-green">l</span>
-      <span className="text-logo-red">i</span>
-    </h1>
+    <div className="mb-10 text-center">
+      <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tight select-none mb-3">
+        <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
+          Max
+        </span>
+        <span className="text-foreground">search</span>
+      </h1>
+      <p className="text-sm text-muted-foreground tracking-widest uppercase">
+        Beyond Search • Beyond Limits
+      </p>
+    </div>
   );
 };
 

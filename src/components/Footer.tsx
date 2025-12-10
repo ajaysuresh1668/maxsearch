@@ -7,6 +7,9 @@ const Footer = () => {
           <a href="#" className="hover:text-foreground transition-colors">Advertising</a>
           <a href="#" className="hover:text-foreground transition-colors">Business</a>
         </div>
+        <div className="text-xs">
+          © 2025 Maxsearch by N. Subash Chandrabose
+        </div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
           <a href="#" className="hover:text-foreground transition-colors">Terms</a>

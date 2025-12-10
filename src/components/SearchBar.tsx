@@ -57,7 +57,7 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          placeholder="Search the web..."
+          placeholder="Search anything with Maxsearch..."
           className="
             flex-1 bg-transparent outline-none text-lg
             placeholder:text-muted-foreground/60
