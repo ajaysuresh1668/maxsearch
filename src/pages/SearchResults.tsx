@@ -7,6 +7,7 @@ import TypingEffect from "@/components/TypingEffect";
 import ImageSearchResults from "@/components/ImageSearchResults";
 import FramedCard from "@/components/FramedCard";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import SearchProviders from "@/components/SearchProviders";
 
 const mockResults = [
   {
@@ -335,6 +336,8 @@ const SearchResults = () => {
                   </motion.article>
                 ))}
               </div>
+              {/* Search Providers */}
+              <SearchProviders query={query} />
             </motion.div>
           )}
         </AnimatePresence>
