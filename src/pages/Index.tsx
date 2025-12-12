@@ -31,7 +31,7 @@ const Index = () => {
     toast("✨ Feeling lucky!", {
       description: "Taking you somewhere amazing...",
     });
-    navigate(`/search?q=${encodeURIComponent("who is the founder of maxsearch")}`);
+    navigate(`/search?q=${encodeURIComponent("interesting facts")}`);
   };
 
   return (

@@ -2,18 +2,12 @@ import { motion } from "framer-motion";
 
 const SearchLogo = () => {
   const letters = [
-    { char: "M", color: "from-red-500 to-pink-500" },
-    { char: "a", color: "from-orange-500 to-yellow-500" },
-    { char: "x", color: "from-green-500 to-emerald-500" },
-  ];
-
-  const searchLetters = [
-    { char: "s", color: "from-blue-500 to-cyan-500" },
-    { char: "e", color: "from-purple-500 to-violet-500" },
-    { char: "a", color: "from-pink-500 to-rose-500" },
-    { char: "r", color: "from-indigo-500 to-blue-500" },
-    { char: "c", color: "from-teal-500 to-green-500" },
-    { char: "h", color: "from-amber-500 to-orange-500" },
+    { char: "G", color: "from-blue-600 to-blue-400" },
+    { char: "o", color: "from-red-500 to-rose-400" },
+    { char: "o", color: "from-yellow-500 to-amber-400" },
+    { char: "g", color: "from-blue-500 to-cyan-400" },
+    { char: "l", color: "from-green-500 to-emerald-400" },
+    { char: "e", color: "from-red-500 to-pink-400" },
   ];
 
   return (
@@ -23,59 +17,42 @@ const SearchLogo = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        {/* Max - colorful floating letters */}
+      {/* Google - colorful floating letters */}
         {letters.map((letter, index) => (
           <motion.span
-            key={`max-${index}`}
+            key={`google-${index}`}
             className={`bg-gradient-to-br ${letter.color} bg-clip-text text-transparent drop-shadow-lg`}
-            initial={{ y: -50, opacity: 0, rotateZ: -10 }}
+            initial={{ y: -50, opacity: 0, rotateZ: -10, scale: 0.5 }}
             animate={{ 
-              y: [0, -8, 0], 
+              y: [0, -12, 0], 
               opacity: 1,
-              rotateZ: 0,
+              rotateZ: [0, 5, -5, 0],
+              scale: [1, 1.05, 1],
             }}
             transition={{
               y: {
+                duration: 2.5,
+                repeat: Infinity,
+                delay: index * 0.12,
+                ease: "easeInOut"
+              },
+              rotateZ: {
+                duration: 3,
+                repeat: Infinity,
+                delay: index * 0.1,
+                ease: "easeInOut"
+              },
+              scale: {
                 duration: 2,
                 repeat: Infinity,
                 delay: index * 0.15,
                 ease: "easeInOut"
               },
               opacity: { duration: 0.5, delay: index * 0.1 },
-              rotateZ: { duration: 0.5, delay: index * 0.1 }
             }}
             style={{
-              textShadow: "0 0 30px rgba(255,255,255,0.3)",
-              filter: "drop-shadow(0 0 20px rgba(255,100,100,0.4))"
-            }}
-          >
-            {letter.char}
-          </motion.span>
-        ))}
-        
-        {/* search - colorful floating letters */}
-        {searchLetters.map((letter, index) => (
-          <motion.span
-            key={`search-${index}`}
-            className={`bg-gradient-to-br ${letter.color} bg-clip-text text-transparent drop-shadow-lg`}
-            initial={{ y: 50, opacity: 0, rotateZ: 10 }}
-            animate={{ 
-              y: [0, -6, 0], 
-              opacity: 1,
-              rotateZ: 0,
-            }}
-            transition={{
-              y: {
-                duration: 2.5,
-                repeat: Infinity,
-                delay: (index + 3) * 0.12,
-                ease: "easeInOut"
-              },
-              opacity: { duration: 0.5, delay: (index + 3) * 0.1 },
-              rotateZ: { duration: 0.5, delay: (index + 3) * 0.1 }
-            }}
-            style={{
-              filter: "drop-shadow(0 0 15px rgba(100,150,255,0.4))"
+              textShadow: "0 0 40px rgba(255,255,255,0.5)",
+              filter: `drop-shadow(0 0 25px rgba(${index % 2 === 0 ? '66,133,244' : '234,67,53'},0.6))`
             }}
           >
             {letter.char}
@@ -94,10 +71,10 @@ const SearchLogo = () => {
           animate={{ 
             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
           }}
-          transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
-          className="bg-gradient-to-r from-primary via-purple-500 via-pink-500 to-primary bg-[length:200%_auto] bg-clip-text text-transparent"
+          transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+          className="bg-gradient-to-r from-blue-500 via-red-500 via-yellow-500 via-green-500 to-blue-500 bg-[length:300%_auto] bg-clip-text text-transparent font-medium"
         >
-          Beyond Search • Beyond Limits
+          Search the world's information
         </motion.span>
       </motion.p>
 
