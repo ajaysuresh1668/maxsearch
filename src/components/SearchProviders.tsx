@@ -8,46 +8,60 @@ interface SearchProvidersProps {
 const SearchProviders = ({ query }: SearchProvidersProps) => {
   const providers = [
     { 
-      name: "Google", 
-      icon: "🔍",
-      color: "from-blue-500 to-green-500",
-      bgColor: "bg-blue-500/10 hover:bg-blue-500/20",
-      url: `https://www.google.com/search?q=${encodeURIComponent(query)}`
+      name: "Yahoo", 
+      icon: "🟣",
+      color: "from-purple-600 to-violet-500",
+      bgColor: "bg-purple-500/15 hover:bg-purple-500/25",
+      url: `https://search.yahoo.com/search?p=${encodeURIComponent(query)}`
+    },
+    { 
+      name: "Bing", 
+      icon: "🔷",
+      color: "from-cyan-500 to-blue-600",
+      bgColor: "bg-cyan-500/15 hover:bg-cyan-500/25",
+      url: `https://www.bing.com/search?q=${encodeURIComponent(query)}`
     },
     { 
       name: "ChatGPT", 
       icon: "🤖",
-      color: "from-green-500 to-teal-500",
-      bgColor: "bg-green-500/10 hover:bg-green-500/20",
+      color: "from-emerald-500 to-teal-500",
+      bgColor: "bg-emerald-500/15 hover:bg-emerald-500/25",
       url: `https://chat.openai.com/?q=${encodeURIComponent(query)}`
-    },
-    { 
-      name: "Bing", 
-      icon: "🌐",
-      color: "from-cyan-500 to-blue-500",
-      bgColor: "bg-cyan-500/10 hover:bg-cyan-500/20",
-      url: `https://www.bing.com/search?q=${encodeURIComponent(query)}`
-    },
-    { 
-      name: "YouTube", 
-      icon: "▶️",
-      color: "from-red-500 to-pink-500",
-      bgColor: "bg-red-500/10 hover:bg-red-500/20",
-      url: `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`
-    },
-    { 
-      name: "Wikipedia", 
-      icon: "📚",
-      color: "from-gray-500 to-slate-500",
-      bgColor: "bg-gray-500/10 hover:bg-gray-500/20",
-      url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(query)}`
     },
     { 
       name: "DuckDuckGo", 
       icon: "🦆",
-      color: "from-orange-500 to-red-500",
-      bgColor: "bg-orange-500/10 hover:bg-orange-500/20",
+      color: "from-orange-500 to-amber-500",
+      bgColor: "bg-orange-500/15 hover:bg-orange-500/25",
       url: `https://duckduckgo.com/?q=${encodeURIComponent(query)}`
+    },
+    { 
+      name: "YouTube", 
+      icon: "▶️",
+      color: "from-red-500 to-rose-500",
+      bgColor: "bg-red-500/15 hover:bg-red-500/25",
+      url: `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`
+    },
+    { 
+      name: "Wikipedia", 
+      icon: "📖",
+      color: "from-slate-600 to-gray-500",
+      bgColor: "bg-slate-500/15 hover:bg-slate-500/25",
+      url: `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(query)}`
+    },
+    { 
+      name: "Ecosia", 
+      icon: "🌳",
+      color: "from-green-500 to-lime-500",
+      bgColor: "bg-green-500/15 hover:bg-green-500/25",
+      url: `https://www.ecosia.org/search?q=${encodeURIComponent(query)}`
+    },
+    { 
+      name: "Brave", 
+      icon: "🦁",
+      color: "from-orange-600 to-red-500",
+      bgColor: "bg-orange-600/15 hover:bg-orange-600/25",
+      url: `https://search.brave.com/search?q=${encodeURIComponent(query)}`
     },
   ];
 
