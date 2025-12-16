@@ -2,12 +2,15 @@ import { motion } from "framer-motion";
 
 const SearchLogo = () => {
   const letters = [
-    { char: "G", color: "from-blue-600 to-blue-400" },
-    { char: "o", color: "from-red-500 to-rose-400" },
-    { char: "o", color: "from-yellow-500 to-amber-400" },
-    { char: "g", color: "from-blue-500 to-cyan-400" },
-    { char: "l", color: "from-green-500 to-emerald-400" },
-    { char: "e", color: "from-red-500 to-pink-400" },
+    { char: "M", color: "from-blue-600 to-blue-400" },
+    { char: "a", color: "from-red-500 to-rose-400" },
+    { char: "x", color: "from-yellow-500 to-amber-400" },
+    { char: "s", color: "from-blue-500 to-cyan-400" },
+    { char: "e", color: "from-green-500 to-emerald-400" },
+    { char: "a", color: "from-red-500 to-pink-400" },
+    { char: "r", color: "from-purple-500 to-violet-400" },
+    { char: "c", color: "from-orange-500 to-amber-400" },
+    { char: "h", color: "from-cyan-500 to-teal-400" },
   ];
 
   return (
